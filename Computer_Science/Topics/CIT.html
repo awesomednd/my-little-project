@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Communication and Internet Technologies</title>
+        <link rel="stylesheet" href="../Style_Sheet.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="../Computer_Science_Index.html">Computer Science home page</a></li>
+            <li><a href="Binary_and_Hexidecimal.html">Binary and Hexdecimal</a></li>
+            <li><a href="Data_storage.html">Data storage</a></li>
+            <li><a class="active" href="CIT.html">Communication and Internet Technologies</a></li>
+        </ul>
+        <br>
+        <h1>Communication and Internet Technologies</h1>
+        <h2>Data transmision</h2>
+        <p>the data transmited is a bit, it can be tranfered via copper cable or fiber.</p>
+        <p>Bit rate is the mesure of data transmited in a second so 50 mbps is 5 MB per seccond and it is faster than 25 mbps (2,5 MB per second).</p>
+        <h3>Types of Data transmision</h3>
+        <p><strong>serial data transmision</strong></p>
+        <p>serial data transmision only transmits one bit at a time and it only uses one wire to transmit; So a 56k modem can transmit ay 57600</p>
+        <p>So lets transmit 10011001 first we would transmit the first bit (dev1 1001 1 0 0  1 dev2) then it recives the next bit and we can send the next (Dev1 01 0 1 1 100 Dev2) Then we can send the last bits so it would be (Dev1     10011001 Dev2) so all the bits have been sent.</p>
+        <p><strong>Parallel data transmision</strong></p>
+        <p>In parallel data transmision 8 bits of data can be sent at once so lets transmit 10011001 using parallel sata transmision (Dev1 10011001     Dev2) and (Dev1     10011001 Dev2)</p>
+        <p>Compare serial and parallel transmision</p>
+        <table>
+            <tr>
+                <th>Serial transmision</th>
+                <th>Parallel transmision</th>
+            </tr>
+            <tr>
+                <td>Used over long distances</td>
+                <td>Used over short distances</td>
+            </tr>
+            <tr>
+                <td>Uses a single wire</td>
+                <td>Uses multiple wires</td>
+            </tr>
+            <tr>
+                <td>Reduced costs as only one wire needed</td>
+                <td>Increased costs as multiple wires needed</td>
+            </tr>
+            <tr>
+                <td>Slower transmision as data is only transmited one bit at a time over a single wire</td>
+                <td>Quicker transmision as data is sent symultaneously over multiple wires</td>
+            </tr>
+            <tr>
+                <td>safer transmision as it is easier to accurately collate the bits together as they are sent one at a time</td>
+                <td>Less safe transmision as bits are sent simultaneously and errors can occur in collating them together at the receiver's side</td>
+            </tr>
+        </table>
+        <p><strong>types of data transmision</strong></p>
+        <p>Simplex transmision data can only be sent in one direction</p>
+        <p>Full Duplex transmision data can be sent in both direction at the same time</p>
+        <p>Half Duplex transmision data can only be sent at a time but can transmit in both directions.</p>
+        <h2>Error detection and corecction</h2>
+        <p>errors can occur for a multitude of reasons and the most common is in wireless data transmision as the data can become corroupt as the it travels through the air.</p>
+        <h3>Checksum</h3>
+        <p>A checksum is a simple method of error detection. The number of bits being transmited is counted up and this numeric count is transmited with the data. The reciver can then see if the same number of bits has arrived. If the counts match then the receiver knows a full transmission of the data has been received</p>
+        <h3>Parity check</h3>
+        <p>A parity check uses a parity bit to make sure that the data has been sent accurately. Data is sent in bytes, normaly mad up of 8 bits. In a parity check, the first 7 bits of thye byte are the data itself, the last bit is the parity bit. A parity check can use odd parity or even parity. All the bits are added together in the byte and depending on whether odd or even parity is being used 1 or a 0 will be added as the finall parity bits </p>
+        <P>If we use the example of 1001100, using an even parity check, the parity bit would be a 1:</P>
+        <p>1+0+0+1+1+0+0 = 3</p>
+        <p>As 3 is an odd number we need to add 1 to make it even. This is why, when using even parity, the parity bit for this one is 1</p>
+        <p>Using the example 1001100 and an odd parity check, The parity bit would be a 0:</p>
+        <p>1+0+0+1+1+0+0 = 3</p>
+        <p>As 3 is an odd number we need to add 0 to keep it odd. This is why, were using odd parity, the parity bit for this byte is 0.</p>
+        <p>The device that the data is being transferred between will be set to check for even parity oe odd parity before the data is sent. Parity check is a simple and effective method of error checking. It cannot detect through if disturbance hhas affected a byte that would still have the same odd ore even calculation, but the bits themselves have changed. For example, even parity is being used, the byte 1001100 is being sent with the parity bit 1. If the byte arrived as 110100 with the parity bit of 1, no error would be detected by a parity check as the calculation of the bits is still even. Parity checking is also used on data that is stored as well as data that is transmited.</p>
+        <h3>Check digits</h3>
+        <p>A check digit is a method of error detection that is used on identification numbers such as barcodes, ISBMs and bank account numbers. It is used to detect human error when entering these numbers. A calculation is preformed using the digits in te identification number and a check digit is added to the end of the number as a rusult. The computer will preform the same calculation and compare the result to the check digit. If the two match, it knows the number is correct.</p>
+        <h3>Automatic repeat request</h3>
+        <p>Automatic repeat request (ARQ) is a set  of rules for error control when transmitting data. When the device receiving the data there is an error, It automatically sends a request to the device transmitting the data to resend the packet. This resend request will be sent repeatedly until the packet received error free or a limited amount of resend requests is reached.</p>
+        <h2>Security aspects</h2>
+        <p>There are various security issues that can be encountered when using the internet. The internet itself is a fairly insecure way of transferring data, so security has become a top priority for the everyday user as well as businesses and governments. Security issues can arise for many reasons; it could be when downloading a file, entering data through a web form or sending data via email.</p>
+        <p>Good internet security id necessary to protect your personal details, financial details and transactions, as well as downloading and transferring lots of other data. If good internet security is not in place, not only would people's personal computers be attacked, by people sush as <strong>hackers</strong>, but it could potentially bring a whole country's economy to a hult if businesses is affected. This section explains some of the risk you can encounter and how you can avoid them through the use of some good internet security methods.</p>
+        <h3>Malware</h3>
+        <p>There are risks associated with using the internet that can be harmful to your computer such as <strong>Malware</strong>. There are a number of diffrent types of malware that you could encounter, for example virus and spyware.</p>
+        <h3>Viruses</h3>
+        <p>A <strong>virus</strong> is a program that is downloaded on to a computer without the user knowledge or premission. It is desinged to harm a computer and the files that are on it. The most common types of viruses will replicate itself over and over until it brings your computer system to a halt. A virus is often spread through sharing through sharing files attachments on emails.</p>
+        <p>The first known computer virus was called Creeper virus. It was written by Bob Thomas at a technology company called BBN. The Creeper virus was a test program. It replicated itself and it displayed the message"I', the Creeper catch me if you can!" on every system it infected. It was not desinged to harm any computers, just to be a demonstration of a computer application. Prior to this, Self-replicating programs had not been demonstated and it was the ability to self-replecate gained it the nam,e of the first computer virus. A correction program was written called Reaper that deleated the Creaper virus no damage was left to a computer when the reaper program was run.</p>
+        <h3>Spyware</h3>
+        <p><strong>Spyware</strong> is software that is created to collect information on a user's computer use through their internet conection connection. The collection of the data is done without the users knowledge or premission and it is collected normally to be sold on for marketing. It can also gather infomation such as passwords, bank details and credit card details. These details can be used to steal the users identity. Spyware is created by people who want to obtain this data to use it unlawfully. It is often downloaded from untrustworthy websites without user's knowledge. The spyware hides inside the data downloaded and infects the computer without the user being aware of the action.</p>
+        <p>As well as collecting information on the user without premission, spyware will also take up some of the bandwith avalible for the user's internet connection as it passes back collected information. As a result it can reduce the bandwidth available to the user.</p>
+        <h3>Hacking</h3>
+        <p>As well as the risks above users can also be exsposed to <strong>Hacking</strong> when using the internet. A hacker is someone who tries to gain unlawful access to a computer or s network by writing a program that will do this. Hackers normally look for a weekness in the setup of a network or computer system and use this as a way to enter. They do this for a number of reasons, such as they may be trying to gain access to money, creat a challenge for themselves or it could possibly be out of protest for an issue they want to see highlighted.</p>
+        <p>A hacker is usually classified as a 'White hat hacker' or a 'black hat hacker'. A white hat hacker exposes security issues in a network or system, but not for unlawful reasons. A white hat hacker can be hired by an organisation to test its own sytems to discover any weaknesses that exist. This way those weaknesses can be fixed. A black hat hacker is a hacker that gains access unlawfully.</p>
+        <h3>Protecting against the risks</h3>
+        <p>It is possible to protect you computer from attacks tgat can arise from various issues encountered when using the internet. Anti-Virus software can be used to detect a virus attack on a computer system. The Anti-Virus software will scan the computers Hard disk for any virus attacks and it will remove any that it finds. New viruses are constantly being developed so most Anti-Virus software will have an update funtion built into them. This means that when a new virus is discovered, the Anti-Virus software developers can release an update for computers to detect it.</p>
+        <p>As well as detecting viruses, anti-virus software can be used to detect and remove further malware and spyware. Anti-Virus software cannot prevent an attack happenin to a computer system, but they can detect it as it is happening and remove the harmful programs. To detect an attack normally a scanning processhas to take place. The software scans the computer's hard drive for any viruses. If detected, a virus is removed from the system.</p>
+        <p><strong>Firewalls</strong> are used to monitor transmissions coming into and transmission going out od a computer or a network. Firewalls can be hardware based or software based. Hardware based firewalls are more difficult to compromise but are expensive, Whereas software firewalls are cheap, but can be disabled by a virus.</p>
+        <p>A firewall uses rules to determine whether an inbound or outbound transmission should be allowed. Some rules, for example those governing email transmission, are determined by the system. Others, such as transmission for online multiplayer games, can be determined by the user. The firewall allows authorised transmission to take place, but blocks any transmission that dose not conform to set rules.</p>
+        <p>Spyware sends outbound transmission containing stolen data to scammers. Hackers use inbound transmissions to gain access to computers via tge internet. Firewalls block these transmissions, thereby protecting the computer.</p> 
+    </body>
+</html>

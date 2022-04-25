@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Data_storage</title>
+        <link rel="stylesheet" href="../Style_Sheet.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="../Computer_Science_Index.html">Computer Science home page</a></li>
+            <li><a href="Binary_and_Hexidecimal.html">Binary and Hexdecimal</a></li>
+            <li><a class="active" href="Data_storage.html">Data storage</a></li>
+            <li><a href="CIT.html">Communication and Internet Technologies</a></li>
+        </ul>
+        <br>
+        <h1>Data storage</h1>
+        <p>as a computer can only procces 1 it has to store in zero or one so data storage works like example in ascii</p>
+        <h2>text</h2>
+        <p>01010100 01101000 01101001 01110011 00100000 01101001 01110011 00100000 01100001 01101110 00100000 01100101 01111000 01100001 01101101 01110000 01101100 01100101 00100000 01101110 01101111 01110100 01101000 01101001 01101110 01100111 00100000 01110100 01101111 00100000 01110011 01100101 01100101 00100000</p>
+        <p>which translates to: This is an example nothing to see.</p>
+        <h2>pitures</h2>
+        <p>here is a simple black and white image in an 8 by 8 array</p>
+        <p>11000011</p>
+        <p>11100111</p>
+        <p>01111110</p>
+        <p>00111100</p>
+        <p>00111100</p>
+        <p>01111110</p>
+        <p>11100111</p>
+        <p>11000011></p>
+        <p>Which should look like:</p>
+        <img src="../images/Picture.png" alt="ploted_picture">
+        <p>Colour pictures are stored with colour data which makes the amount of data to store much bigger. Each picture is stored with  4 8bit channels, one for red, one for green, one for blue and one for brightness.</p>
+        <h2>Sound</h2>
+        <p>The sound we here is analog but computers are digital and can only procces binary. We will use a digital to analog converter (DAC) so we can hear it. sound is recorded in timed intervals so it can be proccesed by a computer by. The sound is reccord in time samples called hertz, telephone communication sample at 8000hz a cd samples at 44100Hz</p>
+        <table>
+            <tr>
+                <th>time sample</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+                <th>7</th>
+                <th>8</th>
+                <th>9</th>
+                <th>10</th>
+                <th>11</th>
+                <th>12</th>
+            </tr>
+            <tr>
+                <td>sound value</td>
+                <th>9</th>
+                <th>13</th>
+                <th>9</th>
+                <th>3.5</th>
+                <th>4</th>
+                <th>9</th>
+                <th>1.5</th>
+                <th>9</th>
+                <th>8</th>
+                <th>5</th>
+                <th>8</th>
+                <th>5.5</th>
+            </tr>
+        </table>
+        <p>When you play it back thr sound would be choppy so we will use an algorthem to smooth it out.</p>
+        <h2>Data compression</h2>
+        <p>compression is a way of shrinking a file smaller than its orginal with or without lossing some data.</p>
+        <h3>Lossy compression</h3>
+        <p>Lossy compression is a method of compression is a method of compression in which unnecessary data is thrown out in order to make it smaller but it can make sound and video file look and sound diffrent but it will be very simmilar.</p>
+        <h3>Lossless compression</h3>
+        <p>Lossless compression is a method of compression where you dont through out any of the data so it dosen't sound diffrent for exapmple</p>
+        <p class="Colour" align="center">WHEN IT IS SNOWING HEAVILY LOOK OUTSIDE.</p>
+        <P class="Colour" align="center">LOOK OUTSIDE IT IS SNOWING HEAVILY.</P>
+        <p>excluding spaces and full stops. 1 character requiers 1 byte of storage, so we would need 62 bytes of memory lets set this out in a compression table</p>
+        <table>
+            <tr>
+                <th>Word</th>
+                <th>position(s) in the message</th>
+            </tr>
+            <tr>
+                <td>WHEN</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>IT</td>
+                <td>2, 10</td>
+            </tr>
+            <tr>
+                <td>IS</td>
+                <td>3, 11</td>
+            </tr>
+            <tr>
+                <td>SNOWING</td>
+                <td>4, 12</td>
+            </tr>
+            <tr>
+                <td>HEAVILY</td>
+                <td>5, 15</td>
+            </tr>
+            <tr>
+                <td>LOOK</td>
+                <td>6, 8</td>
+            </tr>
+            <tr>
+                <td>OUTSIDE</td>
+                <td>7, 9</td>
+            </tr>
+            <tr>
+                <td>TOTAL BYTES: 33</td>
+                <td>TOTAL BYTES: 13</td>
+            </tr>
+        </table>
+        <p>So we have compressed it to 46 bytes so it is now much smaller. e.g. 2</p>
+        <p class="Colour" align="center">ASK NOT WHAT YOUR FRIEND CAN DO FOR YOU.</p>
+        <p class="Colour" align="center">ASK WHAT YOU CAN DO FOR YOUR FRIEND.</p>
+        <p>excluding spaces and full stops it is 59 bytes</p>
+        <table>
+            <tr>
+                <th>Word</th>
+                <th>Position(s) in the message</th>
+            </tr>
+            <tr>
+                <td>ASK</td>
+                <td>1, 10</td>
+            </tr>
+            <tr>
+                <td>NOT</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>WHAT</td>
+                <td>3, 11</td>
+            </tr>
+            <tr>
+                <td>YOUR</td>
+                <td>4, 16</td>
+            </tr>
+            <tr>
+                <td>FRIEND</td>
+                <td>5, 17</td>
+            </tr>
+            <tr>
+                <td>CAN</td>
+                <td>6, 13</td>
+            </tr>
+            <tr>
+                <td>DO</td>
+                <td>7, 14</td>
+            </tr>
+            <tr>
+                <td>FOR</td>
+                <td>8, 15</td>
+            </tr>
+            <tr>
+                <td>YOU</td>
+                <td>9, 12</td>
+            </tr>
+            <tr>
+                <td>TOTAL BYTES: 31</td>
+                <td>TOTAL BYTES: 17</td>
+            </tr>
+        </table>
+        <p>SO it has been compressed to 48 bytes, uncomprresed file can be huge so some uncomprresed files you can't attactch it to an email, both lossy and lossless compression algorthems will look for repeating patter within the file and do there method of compression and shrink the file size.</p>
+        <h2>File Formats</h2>
+        <p>a file formate is a type of file to store invomation in diffrent Formats.</p>
+        <table>
+            <tr>
+                <th>File type</th>
+                <th>File extension</th>
+                <th>Use</th>
+            </tr>
+            <tr>
+                <td>Text</td>
+                <td>.docx</td>
+                <td>Microsoft Word document</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.rtf</td>
+                <td>Rich Text Format File</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.pdf</td>
+                <td>Portable Document Format</td>
+            </tr>
+            <tr>
+                <td>Data</td>
+                <td>.csv</td>
+                <td>Comma Separated Values file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.xlsx</td>
+                <td>Microsoft Excel Spreadsheet</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.mbd</td>
+                <td>Microsoft Access Database</td>
+            </tr>
+            <tr>
+                <td>Audio</td>
+                <td>.mp3</td>
+                <td>MPEG-3 audio file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.mid</td>
+                <td>MIDI file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.wav</td>
+                <td>Wave audio file</td>
+            </tr>
+            <tr>
+                <td>Video</td>
+                <td>.mp4</td>
+                <td>MPEG-4 video file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.flv</td>
+                <td>Flash video file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.wmv</td>
+                <td>Windows Media Video file</td>
+            </tr>
+            <tr>
+                <td>Image</td>
+                <td>.bmp</td>
+                <td>Bitmap file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.gif</td>
+                <td>Graphical Interchange Format file</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.jpg</td>
+                <td>JPEG Photo</td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>.png</td>
+                <td>Portable Network graphic</td>
+            </tr>
+        </table>
+    </body>
+</html>
