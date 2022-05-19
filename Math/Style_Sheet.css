@@ -77,3 +77,19 @@ li a:hover {
 .green {
     background-color: green;
 }
+.DB {
+    color: blue;
+    font-size: 60px;
+}
+.Y {
+    color: yellow;
+    font-size: 60px;
+}
+.R {
+    color: red;
+    font-size: 60px;
+}
+.P {
+    color: blueviolet;
+    font-size: 60px;
+}
