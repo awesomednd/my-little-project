@@ -96,3 +96,9 @@ li a:hover {
 .DB2 {
     color: blue;
 }
+.li2 {
+    color: black;
+    display: ruby;
+    float: none;
+    opacity: show;
+}
