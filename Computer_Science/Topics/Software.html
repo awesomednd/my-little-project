@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Software</title>
+        <link rel="stylesheet" href="../Style_Sheet.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="../Computer_Science_Index.html">Computer Science home page</a></li>
+            <li><a href="Binary_and_Hexidecimal.html">Binary and Hexdecimal</a></li>
+            <li><a href="Data_storage.html">Data storage</a></li>
+            <li><a href="CIT.html">Communication and Internet Technologies</a></li>
+            <li><a href="Hardware.html">Hardware</a></li>
+            <li><a class="active" href="Software.html">Software</a></li>
+        </ul>
+        <br>
+        <h1>Software</h1>
+        <p>Almost all of us have used a peace of software in our time. It is everyware and there are diffrent types of software.</p>
+        <h2>Types of software</h2>
+        <h3>System software</h3>
+        <p>System software is the software requierd by the system to function and it will manage the hardware and other software. <br> There are two types of system software here they are; <br> Operating System (OS) <br> Utility Programs here are some examples of; <br> System clean-up-searches for and removes un-used programs and data. <br> Defragmentation-rearranges files so that they are located together (contiguously) and that the free spaces is located together. (Defrag Only moves are acutual Data into a line because HDD use a platter that a head moves over and defrag will destroy an SSD(Solid State Drive). </p>
+        <h3>Application Software</h3>
+        <p>Application software is the software that you will normally install and it is allows the user to do task here are some examples. E.G. <br> A <strong class="Colour">word processor</strong> allows the user to create written documents. <br> A <strong class="Colour">spreadsheet</strong> allows the user to preform calculations on data. <br> A <strong class="Colour">database</strong> allows the user to store and search a set of data. <br> A <strong class="Colour">web browser</strong> allows the user to view and navigate websites.</p>
+        <h2>Opearting system</h2>
+        <p>An Opearting system (OS) is an example of system software, some examples are Windows, Linux, Unix, BSD, FreeBSD and MacOS. for other devices like phones and tablets. E.G. Android OS or iOS and iPadOS. Here are some of the feautures of an operation system.</p>
+        <h3 class="Colour">Providing an interface</h3>
+        <p>The OS allows the user to enter data, and outputs data to the user, all through the <strong class="Colour">interface</strong>. There are diffrent types of interface:</p>
+        <p><strong class="Colour">Graphical User Interface (GUI)</strong> has windows, icons, menus and pointers (WIMP). It is what you will be familiar with from PCs, mobile phones, etc. This is most useful for novices because because it is often intuitive. An example is Windows (Linux can have a GUI using Xorg or walen with Gnome or KDE plasma.)</p>
+        <p>A <strong class="Colour">command line interface</strong> requiers the user to enter text as commands. This is most useful for expert users becasue the commands enterd must be exact. (A command example for Debian is sudo apt update && upgrade.) An example is Linux.</p>
+        <p>A <strong class="Colour">natural language interface</strong> allows the suer to enter any text commands, or spaek commands. The OS then analyses what has been entered and preforms the action.</p>
+        <h3 class="Colour">Managing files</h3>
+        <p>A user will use software to create files. The OS allows the creation of directories that the files can be stored within. It also allows the user to move files, copy files, delete files, name and rename files, plus many other actions such as sortingby date.</p>
+        <h3 class="Colour">Managing peripherals and drivers</h3>
+        <p>A computer cannot be used without input and output devices. These are called <strong class="Colour">peripherals</strong>. Anyone can build a peripheral, and it will be programmed by the person who made it - not the developer of the OS. This means that it may not be compatible (for example, it may use a diffrent interpretation of bianry). A <strong class="Colour">driver</strong> is software that translates data from the computer to the peripheral, and vice-versa. The OS allows the installation of these drivers and the sending of data to and from it. (All peripherals must have a legacy mode so it has it own driver but eill work with an industry wide default driver.</p>
+        <h3 class="Colour">Managing memmory</h3>
+        <p>A computer uses memory to store data. This can be using secondary or primary memory.</p>
+        <br>
+        <p>The OS manages the movement of data to and from hardware, primarily RAM. It also checks and makes sure that they have enough memory allocated to preform their function. The OS will also make sure that two processes do not try and access the same memory location.</p>
+        <h3 class="Colour">Managing multitasking</h3>
+        <p>A single processor can only ever execute one instruction at a time. The processor dose this so fast that it appears to be doing several tasks at once. For example, you might be listening to music from a computer, typing a document into a word processor, and the computer is outputting what you are doing. The OS allows this to happen by deciding which processes should be executed next and how long they can spend being processed before switching to another process. The OS dose this by unsing <strong class="Colour">interrupts</strong>.</p>
+        <h3 class="Colour">Managing interrupts</h3>
+        <p>An interrupt is a signal sent to the processor to tell it that something needs its attention. The OS decides which interrupt to run and then performs the actions requierd.</p>
+        <h3 class="Colour">Providing a platform for running applications</h3>
+        <p>Application software needs to  run on a computer. The software could be written by anyone using any language. The OS allows the application software to run on the computer by fetching instructions from it and executing them.</p>
+        <h3 class="Colour">Managing user accounts</h3>
+        <p>Most computers need a user to set up an account. This can include preferences, as well as a username and password (text and/or biometric). The OS allows a user to set-up an account, keeps the data separate for multiple accounts, and restricts the access by using the password.</p>
+        <h2>Interrupts</h2>
+        <p>An inturupte isa  signal to the processor to tell it that something need its attention. An interrupt can be software or hardware based. This table has several examples.</p>
+        <table>
+            <tr>
+                <th>Software</th>
+                <th>Hardware</th>
+            </tr>
+            <tr>
+                <td>Division by 0.</td>
+                <td>Data input, E.G. key pressed on a keyboard, mouse click. (This is only how ps2 works usb peripherals by the processor asking the peripheral.)</td>
+            </tr>
+            <tr>
+                <td>Two processes attempting to access the same memory location.</td>
+                <td>Error from hardware, E.G. printer out of paper.</td>
+            </tr>
+            <tr>
+                <td>Program request for input.</td>
+                <td>Hardware failure.</td>
+            </tr>
+            <tr>
+                <td>Output required.</td>
+                <td>Hard drive signal that it has read data.</td>
+            </tr>
+            <tr>
+                <td>Data requierd from memory.</td>
+                <td>New hardware device connected.</td>
+            </tr>
+        </table>
+        <p>An interrupt has a priority. A high-priority interrupt needs the attention quickly, for example, hardware failure. A low-priority interrupt needs the processor but it's not urgent, for example </p>
+    </body>
+</html>
