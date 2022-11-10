@@ -72,6 +72,28 @@
                 <td>New hardware device connected.</td>
             </tr>
         </table>
-        <p>An interrupt has a priority. A high-priority interrupt needs the attention quickly, for example, hardware failure. A low-priority interrupt needs the processor but it's not urgent, for example </p>
+        <p>An interrupt has a priority. A high-priority interrupt needs the attention quickly, for example, hardware failure. A low-priority interrupt needs the processor but it's not urgent, for example, data input. This managed by the interrupt hander (IH)</p>
+        <p>When an interrupt is generated it is put in a queue according to its priority.</p>
+        <p>The sequence of activities is:</p>
+        <p>When the processor finishes it current fetch-decode-execute cycle (or before the start of the next FDE cycle), it checks the interrupt queue.</p>
+        <p>It checks whether there is an interrupt with a higher priority than the current task it is processing.</p>
+        <p>If it is, it:</p>
+        <p>Stores the current process and fetches the interrupt.</p>
+        <p>Checks the source of the interrupt.</p>
+        <p>Calls the relevant interrupt service routine (ISR). This is a sequence of instructions that handle the interrupt.</p>
+        <p>When finished the stored process is returned to memory or another higher-priority interrupt is fetched.</p>
+        <p>If it isn't, it runs another FDE cycle.</p>
+        <h2>Types of programming language</h2>
+        <p>When you are writing computer programs you will make use of specific software that allows you to write, edit, test and run the programs you write.</p>
+        <p>Programming languages can be categorised as <strong class="Colour">high-level</strong> and <strong class="Colour">low-level</strong>.</p>
+        <h3 class="Colour">High-level</h3>
+        <p>A high level language uses human-language style words. These could be English words that we recognise and use day-to-day. For example, if,while,output,print,input; as people we understand these, but they are also high-level language instructions. You will be learning to use a high-level language, for example, python, Java, VB.NET.</p>
+        <p>Here are some examples of high-level language statements:</p>
+        <h4>Python:</h4>
+        <p>print("This is a high-level language statement)</p>
+        <h4>VB.NET:</h4>
+        <p>Dim x as integer <br>x = console.readline()</p>
+        <h4>Java:</h4>
+        <p>num1 = 10; <br>num2 = 5; <br>num3 = num1 + num2;</p>
     </body>
 </html>
