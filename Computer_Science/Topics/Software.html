@@ -98,5 +98,93 @@
         <h3 class="Colour">Low-level</h3>
         <p>There are two main types of low-level language, <strong class="Colour">machine code</strong> and <strong class="Colour">assembly language</strong>.</p>
         <p>A computer executes machine code, this is in binary (1s and 0s). If you write a program in a high-level languages it needs to be converted into machine code before it can executed. Different computers may have diffrent machine code (for example, depending on the manufacturer). This means that machine code is <strong class="Colour">non portable</strong>; you can write a program in machine code and it may not run on a different computer.</p>
+        <p>An example of machine code is: 001100110</p>
+        <p>Assembly language is an in-between stage. it uses <strong class="Colour">Mnemonics</strong> to represent code, for example, to store data in a mmory location it may use the mneumonic STO. this is a mid-way stage. Each high-level language statement is converted into assembly language instructions, which are then converted into machine code.</p>
+        <p>Examples of assembly language are: <br>  LDD count <br>  ADD 1 <br>  STO count</p>
+        <p>In assembly language, the program has to state which memory locations are being used. In the previous example, LLD count, the count is the memory location.</p>
+        <p>One high-level language statement may need several assembly language instructions. The previous three assembly language instructions are the same as the single high-level language count = count + 1.</p>
+        <h3 class="Colour">Choosing a language</h3>
+        <p>High- and Low- languages have some benifits and drawbanks in this table</p>
+        <table>
+            <tr>
+                <th>High-level language</th>
+                <th>Low-level language</th>
+            </tr>
+            <tr>
+                <td>Easier for users (humans) to understand, read, write, amend.</td>
+                <td>More difficult for users to understand, read, write and amend.</td>
+            </tr>
+            <tr>
+                <td>Easier for users (humans) to debug code.</td>
+                <td>Harder for users to debug code.</td>
+            </tr>
+            <tr>
+                <td>It must be converted into a low-level language before it can be run.</td>
+                <td>Machine code dose not need converting. <br><br> Assembly language must be assembled before execution, but this is faster than from high-level language.</td>
+            </tr>
+            <tr>
+                <td>One statement can represent many low-level instructions.</td>
+                <td>Several instructions are needed for each high-level language statement.</td>
+            </tr>
+            <tr>
+                <td>Cannot directly manipulate the hardware.</td>
+                <td>Can directly manipulate the hardware, E.G. writing to specific memory locations. This can make the program more efficent in terms of speed and memory usage.</td>
+            </tr>
+        </table>
+        <h2>Translator</h2>
+        <p>A code translator converts code to machine code here are the diffrent types.</p>
+        <h3 class="Colour">Assembler</h3>
+        <p>If you have a program written in assembly language, then an <strong class="Colour">assembler</strong> is used to convert the instructions into machine code fr the proccesor the code is being run on.</p>
+        <h3 class="Colour">Interpreters and compilers</h3>
+        <p>If you have written a program in a high-level language then you can use an <strong class="Colour">interpreter</strong> or a <strong class="Colour">compiler</strong> to translate the instructions.</p>
+        <p>An interpreter: <br> reads one line of the high-level language code <br> Checks that it is syntactically correct: <br>   If it is not, it stops and reports an error to the user <br>    If it is, it executes the statement and moves to the next.</p>
+        <p>Interpreters are most useful when writing the program, because it will stop at an error, allow you to correct it, and then continue executing from the same position.</p>
+        <p>Interpreters are not as useful for whole-system testing, or when the program is complete. This is because all of the code needs to be interpreted every time the program is run, even if there are no errors.</p>
+        <p>A compiler checks all the code, by going through one-line after the other. If there are any syntax errors, they are all reported to the user and the program is not executed. If there are no errors, then an <strong class="Colour">executable file</strong> is created. An executable file uses intermediate or object code derived from the high-level language code. The actual program code is not included so if someone has the executable file, they cannot view or amend the orginal code (It is possible to uncompile with special tools). The executable file can be run without having to re-translate the code.</p>
+        <p>Compilers are useful when you have finished the program or need to test a working element repeatedly. This is because the code not need to be translated each time, the executable file is run repeatedly.</p>
+        <p>This table shows the comparosin of interpreters and compilers</p>
+        <table>
+            <tr>
+                <th>Interpreter</th>
+                <th>Compiler</th>
+            </tr>
+            <tr>
+                <td>Translates one line of code into machine code and then executes (runs) it.</td>
+                <td>Translates all lines of code into machine code, before executing the program.</td>
+            </tr>
+            <tr>
+                <td>Reports a syntax error as soon as it is picked up, and stops the program running until corrected.</td>
+                <td>Reports all syntax errors at the same time, the program is not run until all errors are corrected.</td>
+            </tr>
+            <tr>
+                <td>Useful when writing a program.</td>
+                <td>Useful when a program has been finished and is ready for testing or distribution.</td>
+            </tr>
+            <tr>
+                <td>Code needs to be re-translated each time the program is run.</td>
+                <td>Code dose not need re-translating each time the program is run.</td>
+            </tr>
+            <tr>
+                <td>Dose not produce an executable file.</td>
+                <td>Produces an executable file.</td>
+            </tr>
+            <tr>
+                <td>Source code is requierd to run the program.</td>
+                <td>Source code is not requierd to run the program, only the executable file.</td>
+            </tr>
+            <tr>
+                <td>Interpreter software is requierd to run the program.</td>
+                <td>No other software is requierd to run the executable file.</td>
+            </tr>
+            <tr>
+                <td>You can test part of a program without completing it all.</td>
+                <td>You need to have finished a section of code before testing it.</td>
+            </tr>
+        </table>
+        <h2>Integrated Development Enviroment (IDE)</h2>
+        <p>When you write a computer program you will most likely use an <strong class="Colour">Integrated Development Enviroment (IDE)</strong>. This is a piece of software that includes an <strong class="Colour">editor</strong> for you to enter and amend your code. This editor may include other feautures such as: <br>   <strong class="Colour">Auto-completion</strong>; you start typing a command and it suggests options for you to select the correct one. <br>     <strong class="Colour">Auto-correction</strong>; if you spell a command incorrect it changes it to what you meant to type. <br>     <strong class="Colour">Prettyprint</strong>; this changes the colour of words, E.G. commands and identifiers. This helps you spot key terms and whether you have entered them correctly or not. <br>    Block minimising; you can make sections of code, E.G. commands, minimised so there is less code to read through.</p>
+        <p>The IDe will also include the relevant translator, that you can select to translate the code. It will also provide a <strong class="Colour">run-time enviroment</strong>; This is where the outputs from the executed code is displayed, it can be a CMD or GUI depending on your language and the code entered.</p>
+        <p>An IDE can also provide debugging features, or error diagnostics, these help you find the problems in your code. Some examples are: <br>     Break points; the user sets these points and the code stops running on that line. This lets you check the values and output from the code to that point. <br>    Variable watch window; the values of the varibles are displayed while the code is running, so they can be checked whether they are correct. <br>   Stepping; the program will run one line at a time, and the user has to tell the program to move on to the next line, so it can be checked line by line.</p>
+        <p>You can write and run programs without an IDE. You can write your code in a basic text file without any formatting, and then run it (usually) through a CMD by entering the correct instruction. An IDE is much more user friendly, with lots of tools to help you write, amend and correct your code.</p>
     </body>
 </html>
