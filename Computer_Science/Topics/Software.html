@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Software</title>
+        <link rel="stylesheet" href="../Style_Sheet.css">
+    </head>
+    <body>
+        <ul>
+            <li><a href="../Computer_Science_Index.html">Computer Science home page</a></li>
+            <li><a href="Binary_and_Hexidecimal.html">Binary and Hexdecimal</a></li>
+            <li><a href="Data_storage.html">Data storage</a></li>
+            <li><a href="CIT.html">Communication and Internet Technologies</a></li>
+            <li><a href="Hardware.html">Hardware</a></li>
+            <li><a class="active" href="Software.html">Software</a></li>
+            <li><a href="TIAIU.html">The internet and its uses</a></li>
+        </ul>
+        <br>
+        <h1>Software</h1>
+        <p>Almost all of us have used a peace of software in our time. It is everyware and there are diffrent types of software.</p>
+        <h2>Types of software</h2>
+        <h3>System software</h3>
+        <p>System software is the software requierd by the system to function and it will manage the hardware and other software. <br> There are two types of system software here they are; <br> Operating System (OS) <br> Utility Programs here are some examples of; <br> System clean-up-searches for and removes un-used programs and data. <br> Defragmentation-rearranges files so that they are located together (contiguously) and that the free spaces is located together. (Defrag Only moves are acutual Data into a line because HDD use a platter that a head moves over and defrag will destroy an SSD(Solid State Drive). </p>
+        <h3>Application Software</h3>
+        <p>Application software is the software that you will normally install and it is allows the user to do task here are some examples. E.G. <br> A <strong class="Colour">word processor</strong> allows the user to create written documents. <br> A <strong class="Colour">spreadsheet</strong> allows the user to preform calculations on data. <br> A <strong class="Colour">database</strong> allows the user to store and search a set of data. <br> A <strong class="Colour">web browser</strong> allows the user to view and navigate websites.</p>
+        <h2>Opearting system</h2>
+        <p>An Opearting system (OS) is an example of system software, some examples are Windows, Linux, Unix, BSD, FreeBSD and MacOS. for other devices like phones and tablets. E.G. Android OS or iOS and iPadOS. Here are some of the feautures of an operation system.</p>
+        <h3 class="Colour">Providing an interface</h3>
+        <p>The OS allows the user to enter data, and outputs data to the user, all through the <strong class="Colour">interface</strong>. There are diffrent types of interface:</p>
+        <p><strong class="Colour">Graphical User Interface (GUI)</strong> has windows, icons, menus and pointers (WIMP). It is what you will be familiar with from PCs, mobile phones, etc. This is most useful for novices because because it is often intuitive. An example is Windows (Linux can have a GUI using Xorg or walen with Gnome or KDE plasma.)</p>
+        <p>A <strong class="Colour">command line interface</strong> requiers the user to enter text as commands. This is most useful for expert users becasue the commands enterd must be exact. (A command example for Debian is sudo apt update && upgrade.) An example is Linux.</p>
+        <p>A <strong class="Colour">natural language interface</strong> allows the suer to enter any text commands, or spaek commands. The OS then analyses what has been entered and preforms the action.</p>
+        <h3 class="Colour">Managing files</h3>
+        <p>A user will use software to create files. The OS allows the creation of directories that the files can be stored within. It also allows the user to move files, copy files, delete files, name and rename files, plus many other actions such as sortingby date.</p>
+        <h3 class="Colour">Managing peripherals and drivers</h3>
+        <p>A computer cannot be used without input and output devices. These are called <strong class="Colour">peripherals</strong>. Anyone can build a peripheral, and it will be programmed by the person who made it - not the developer of the OS. This means that it may not be compatible (for example, it may use a diffrent interpretation of bianry). A <strong class="Colour">driver</strong> is software that translates data from the computer to the peripheral, and vice-versa. The OS allows the installation of these drivers and the sending of data to and from it. (All peripherals must have a legacy mode so it has it own driver but eill work with an industry wide default driver.</p>
+        <h3 class="Colour">Managing memmory</h3>
+        <p>A computer uses memory to store data. This can be using secondary or primary memory.</p>
+        <br>
+        <p>The OS manages the movement of data to and from hardware, primarily RAM. It also checks and makes sure that they have enough memory allocated to preform their function. The OS will also make sure that two processes do not try and access the same memory location.</p>
+        <h3 class="Colour">Managing multitasking</h3>
+        <p>A single processor can only ever execute one instruction at a time. The processor dose this so fast that it appears to be doing several tasks at once. For example, you might be listening to music from a computer, typing a document into a word processor, and the computer is outputting what you are doing. The OS allows this to happen by deciding which processes should be executed next and how long they can spend being processed before switching to another process. The OS dose this by unsing <strong class="Colour">interrupts</strong>.</p>
+        <h3 class="Colour">Managing interrupts</h3>
+        <p>An interrupt is a signal sent to the processor to tell it that something needs its attention. The OS decides which interrupt to run and then performs the actions requierd.</p>
+        <h3 class="Colour">Providing a platform for running applications</h3>
+        <p>Application software needs to  run on a computer. The software could be written by anyone using any language. The OS allows the application software to run on the computer by fetching instructions from it and executing them.</p>
+        <h3 class="Colour">Managing user accounts</h3>
+        <p>Most computers need a user to set up an account. This can include preferences, as well as a username and password (text and/or biometric). The OS allows a user to set-up an account, keeps the data separate for multiple accounts, and restricts the access by using the password.</p>
+        <h2>Interrupts</h2>
+        <p>An inturupte isa  signal to the processor to tell it that something need its attention. An interrupt can be software or hardware based. This table has several examples.</p>
+        <table>
+            <tr>
+                <th>Software</th>
+                <th>Hardware</th>
+            </tr>
+            <tr>
+                <td>Division by 0.</td>
+                <td>Data input, E.G. key pressed on a keyboard, mouse click. (This is only how ps2 works usb peripherals by the processor asking the peripheral.)</td>
+            </tr>
+            <tr>
+                <td>Two processes attempting to access the same memory location.</td>
+                <td>Error from hardware, E.G. printer out of paper.</td>
+            </tr>
+            <tr>
+                <td>Program request for input.</td>
+                <td>Hardware failure.</td>
+            </tr>
+            <tr>
+                <td>Output required.</td>
+                <td>Hard drive signal that it has read data.</td>
+            </tr>
+            <tr>
+                <td>Data requierd from memory.</td>
+                <td>New hardware device connected.</td>
+            </tr>
+        </table>
+        <p>An interrupt has a priority. A high-priority interrupt needs the attention quickly, for example, hardware failure. A low-priority interrupt needs the processor but it's not urgent, for example, data input. This managed by the interrupt hander (IH)</p>
+        <p>When an interrupt is generated it is put in a queue according to its priority.</p>
+        <p>The sequence of activities is:</p>
+        <p>When the processor finishes it current fetch-decode-execute cycle (or before the start of the next FDE cycle), it checks the interrupt queue.</p>
+        <p>It checks whether there is an interrupt with a higher priority than the current task it is processing.</p>
+        <p>If it is, it:</p>
+        <p>Stores the current process and fetches the interrupt.</p>
+        <p>Checks the source of the interrupt.</p>
+        <p>Calls the relevant interrupt service routine (ISR). This is a sequence of instructions that handle the interrupt.</p>
+        <p>When finished the stored process is returned to memory or another higher-priority interrupt is fetched.</p>
+        <p>If it isn't, it runs another FDE cycle.</p>
+        <h2>Types of programming language</h2>
+        <p>When you are writing computer programs you will make use of specific software that allows you to write, edit, test and run the programs you write.</p>
+        <p>Programming languages can be categorised as <strong class="Colour">high-level</strong> and <strong class="Colour">low-level</strong>.</p>
+        <h3 class="Colour">High-level</h3>
+        <p>A high level language uses human-language style words. These could be English words that we recognise and use day-to-day. For example, if,while,output,print,input; as people we understand these, but they are also high-level language instructions. You will be learning to use a high-level language, for example, python, Java, VB.NET.</p>
+        <p>Here are some examples of high-level language statements:</p>
+        <h4>Python:</h4>
+        <p>print("This is a high-level language statement)</p>
+        <h4>VB.NET:</h4>
+        <p>Dim x as integer <br>x = console.readline()</p>
+        <h4>Java:</h4>
+        <p>num1 = 10; <br>num2 = 5; <br>num3 = num1 + num2;</p>
+        <h3 class="Colour">Low-level</h3>
+        <p>There are two main types of low-level language, <strong class="Colour">machine code</strong> and <strong class="Colour">assembly language</strong>.</p>
+        <p>A computer executes machine code, this is in binary (1s and 0s). If you write a program in a high-level languages it needs to be converted into machine code before it can executed. Different computers may have diffrent machine code (for example, depending on the manufacturer). This means that machine code is <strong class="Colour">non portable</strong>; you can write a program in machine code and it may not run on a different computer.</p>
+        <p>An example of machine code is: 001100110</p>
+        <p>Assembly language is an in-between stage. it uses <strong class="Colour">Mnemonics</strong> to represent code, for example, to store data in a mmory location it may use the mneumonic STO. this is a mid-way stage. Each high-level language statement is converted into assembly language instructions, which are then converted into machine code.</p>
+        <p>Examples of assembly language are: <br>  LDD count <br>  ADD 1 <br>  STO count</p>
+        <p>In assembly language, the program has to state which memory locations are being used. In the previous example, LLD count, the count is the memory location.</p>
+        <p>One high-level language statement may need several assembly language instructions. The previous three assembly language instructions are the same as the single high-level language count = count + 1.</p>
+        <h3 class="Colour">Choosing a language</h3>
+        <p>High- and Low- languages have some benifits and drawbanks in this table</p>
+        <table>
+            <tr>
+                <th>High-level language</th>
+                <th>Low-level language</th>
+            </tr>
+            <tr>
+                <td>Easier for users (humans) to understand, read, write, amend.</td>
+                <td>More difficult for users to understand, read, write and amend.</td>
+            </tr>
+            <tr>
+                <td>Easier for users (humans) to debug code.</td>
+                <td>Harder for users to debug code.</td>
+            </tr>
+            <tr>
+                <td>It must be converted into a low-level language before it can be run.</td>
+                <td>Machine code dose not need converting. <br><br> Assembly language must be assembled before execution, but this is faster than from high-level language.</td>
+            </tr>
+            <tr>
+                <td>One statement can represent many low-level instructions.</td>
+                <td>Several instructions are needed for each high-level language statement.</td>
+            </tr>
+            <tr>
+                <td>Cannot directly manipulate the hardware.</td>
+                <td>Can directly manipulate the hardware, E.G. writing to specific memory locations. This can make the program more efficent in terms of speed and memory usage.</td>
+            </tr>
+        </table>
+        <h2>Translator</h2>
+        <p>A code translator converts code to machine code here are the diffrent types.</p>
+        <h3 class="Colour">Assembler</h3>
+        <p>If you have a program written in assembly language, then an <strong class="Colour">assembler</strong> is used to convert the instructions into machine code fr the proccesor the code is being run on.</p>
+        <h3 class="Colour">Interpreters and compilers</h3>
+        <p>If you have written a program in a high-level language then you can use an <strong class="Colour">interpreter</strong> or a <strong class="Colour">compiler</strong> to translate the instructions.</p>
+        <p>An interpreter: <br> reads one line of the high-level language code <br> Checks that it is syntactically correct: <br>   If it is not, it stops and reports an error to the user <br>    If it is, it executes the statement and moves to the next.</p>
+        <p>Interpreters are most useful when writing the program, because it will stop at an error, allow you to correct it, and then continue executing from the same position.</p>
+        <p>Interpreters are not as useful for whole-system testing, or when the program is complete. This is because all of the code needs to be interpreted every time the program is run, even if there are no errors.</p>
+        <p>A compiler checks all the code, by going through one-line after the other. If there are any syntax errors, they are all reported to the user and the program is not executed. If there are no errors, then an <strong class="Colour">executable file</strong> is created. An executable file uses intermediate or object code derived from the high-level language code. The actual program code is not included so if someone has the executable file, they cannot view or amend the orginal code (It is possible to uncompile with special tools). The executable file can be run without having to re-translate the code.</p>
+        <p>Compilers are useful when you have finished the program or need to test a working element repeatedly. This is because the code not need to be translated each time, the executable file is run repeatedly.</p>
+        <p>This table shows the comparosin of interpreters and compilers</p>
+        <table>
+            <tr>
+                <th>Interpreter</th>
+                <th>Compiler</th>
+            </tr>
+            <tr>
+                <td>Translates one line of code into machine code and then executes (runs) it.</td>
+                <td>Translates all lines of code into machine code, before executing the program.</td>
+            </tr>
+            <tr>
+                <td>Reports a syntax error as soon as it is picked up, and stops the program running until corrected.</td>
+                <td>Reports all syntax errors at the same time, the program is not run until all errors are corrected.</td>
+            </tr>
+            <tr>
+                <td>Useful when writing a program.</td>
+                <td>Useful when a program has been finished and is ready for testing or distribution.</td>
+            </tr>
+            <tr>
+                <td>Code needs to be re-translated each time the program is run.</td>
+                <td>Code dose not need re-translating each time the program is run.</td>
+            </tr>
+            <tr>
+                <td>Dose not produce an executable file.</td>
+                <td>Produces an executable file.</td>
+            </tr>
+            <tr>
+                <td>Source code is requierd to run the program.</td>
+                <td>Source code is not requierd to run the program, only the executable file.</td>
+            </tr>
+            <tr>
+                <td>Interpreter software is requierd to run the program.</td>
+                <td>No other software is requierd to run the executable file.</td>
+            </tr>
+            <tr>
+                <td>You can test part of a program without completing it all.</td>
+                <td>You need to have finished a section of code before testing it.</td>
+            </tr>
+        </table>
+        <h2>Integrated Development Enviroment (IDE)</h2>
+        <p>When you write a computer program you will most likely use an <strong class="Colour">Integrated Development Enviroment (IDE)</strong>. This is a piece of software that includes an <strong class="Colour">editor</strong> for you to enter and amend your code. This editor may include other feautures such as: <br>   <strong class="Colour">Auto-completion</strong>; you start typing a command and it suggests options for you to select the correct one. <br>     <strong class="Colour">Auto-correction</strong>; if you spell a command incorrect it changes it to what you meant to type. <br>     <strong class="Colour">Prettyprint</strong>; this changes the colour of words, E.G. commands and identifiers. This helps you spot key terms and whether you have entered them correctly or not. <br>    Block minimising; you can make sections of code, E.G. commands, minimised so there is less code to read through.</p>
+        <p>The IDe will also include the relevant translator, that you can select to translate the code. It will also provide a <strong class="Colour">run-time enviroment</strong>; This is where the outputs from the executed code is displayed, it can be a CMD or GUI depending on your language and the code entered.</p>
+        <p>An IDE can also provide debugging features, or error diagnostics, these help you find the problems in your code. Some examples are: <br>     Break points; the user sets these points and the code stops running on that line. This lets you check the values and output from the code to that point. <br>    Variable watch window; the values of the varibles are displayed while the code is running, so they can be checked whether they are correct. <br>   Stepping; the program will run one line at a time, and the user has to tell the program to move on to the next line, so it can be checked line by line.</p>
+        <p>You can write and run programs without an IDE. You can write your code in a basic text file without any formatting, and then run it (usually) through a CMD by entering the correct instruction. An IDE is much more user friendly, with lots of tools to help you write, amend and correct your code.</p>
+    </body>
+</html>
