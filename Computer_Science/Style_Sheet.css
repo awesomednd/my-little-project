@@ -1,19 +1,4 @@
-ul {
-    background-color: blue;
-    list-style-type: none;
-    outline: solid;
-    outline-color: black;
-    outline-offset: 15;
-    margin: 0;
-    padding: 0;
-    width: 24;
-    opacity: hidden;
-}
 
-li{
-    display: inline;
-    float: left;
-}
 
 .active {
     background-color: darkgray;
